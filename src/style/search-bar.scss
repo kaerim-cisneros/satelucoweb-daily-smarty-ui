@@ -38,13 +38,12 @@
     }  
 }
 
-.search-bar-home{
-
+.search-bar__home {
     align-content: center;
     justify-items: center;
 
-    input{
-        height: 120px;
+    input {
+        height: 118px;
         font-size: 40px;
         @media screen and (max-width: 600px) {
             font-size: 23px;
@@ -53,14 +52,14 @@
     }   
 }
 
-.search-bar-results{
-
+.search-bar__undefined   {
     align-content: start;
     justify-items: center;
 
-    input{
+    input {
         font-size: 22px;
         height: 36px;
+        
     }
 }
 
