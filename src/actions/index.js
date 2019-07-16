@@ -21,11 +21,12 @@ export function fetchPostsWithQuery(query, callback) {
     return function(dispatch) {
         axios.get(`https://api.dailysmarty.com/search?q=${query}`)
             .then(response => {
+                console.log(response.data.log)
                 dispatch({
-                type: SET_RESULTS_POSTS,
-                payload: response.data.posts
+                    type: SET_RESULTS_POSTS,
+                    payload: response.data.posts
                 })
-                if(callback) { callback() }
+                //if(callback) { callback() }
             })
     }
 }
